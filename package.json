@@ -9,6 +9,7 @@
     "classnames": "^2.2.5",
     "react": "^15.5.3",
     "react-dom": "^15.5.3",
+    "react-scroll": "^1.4.8",
     "react-transition-group": "^1.1.1",
     "uigradients": "^0.2.1"
   },
