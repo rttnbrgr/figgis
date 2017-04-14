@@ -72,19 +72,6 @@ class App extends Component {
       transition: 'all 700ms ease',
     }
 
-    let navStyle = {
-      position: 'fixed',
-      top: '0',
-      left: '0',
-      backgroundColor: 'black',
-    }
-
-    let navLinkStyle = {
-      padding: '1em',
-      color: 'white',
-      display: 'inline-block',
-    }
-
     return (
       <div className="App">
 
@@ -95,23 +82,6 @@ class App extends Component {
           <Screen>hi</Screen>
 
         </div>
-
-        <nav style={ navStyle }>
-
-          { content.nav.map((a, index) => (
-
-            <a
-              key={ index }
-              onClick={ this.scrollView.bind(this, index) }
-              href={`#${ a.title }`}
-              className="nav-test"
-              style={ navLinkStyle }>
-              { a.title.toUpperCase() }
-            </a>
-
-          ))}
-
-        </nav>
 
         <Nav scrollMethod={ this.scrollView.bind(this) }/>
 
