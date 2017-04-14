@@ -1,0 +1,102 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  /*height: 150px;*/
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+/*Typography*/
+/*
+font-family: 'Inconsolata', monospace;
+font-family: 'Lato', sans-serif;
+*/
+h1.headline {
+  font-family: 'Lato', sans-serif;
+  color: 'white';
+  font-size: ;: 8em;
+  text-transform: uppercase;
+  border-bottom: 0.15em solid white;
+  padding: 0 .4em .2em .5em;
+  display: inline-block;
+  margin: 0 auto;
+  letter-spacing: .1em;
+  line-height: 1;
+}
+
+.hide {display: none;}
+
+
+p.lato {
+  font-family: 'Lato', sans-serif;
+  line-height: 2;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  /*font-weight: 700;*/
+}
+
+.content {
+  margin: 3.125em;
+  display: flex;
+  opacity: 1; /* this changes */
+  color: white;
+  /*background-color: teal;*/
+  text-align: left;
+}
+
+.column {
+  max-width: 23.125em;
+  min-width: 16.875em;
+  margin: 2.5em;
+  flex: 1 0 auto;
+  /*background-color: pink;*/
+}
+
+gradient-bg {
+  opacity: 1;
+}
+
+.gradient--next {
+  transition: 3s background-color ease;
+}
+
+.square {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: magenta;
+  border-radius: 0.5em;
+  top: 50%;
+  right: 50%;
+  z-index: 9999;
+  animation: 3s linear 0.1s 1 fade;
+  /*duration | timing-function | delay | iteration-count*/
+}
+
+@keyframes fade {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+.fade {
+  animation: 3s linear 0.1s 1 fade;
+}
