@@ -12,21 +12,21 @@ const Slide = (props) => {
   let slideStyles = {
     position: 'absolute',
     top: '0%',
-    // left: '0%',
+    // test both slides
+    left: `${ props.left }%`,
     width: '50vw',
+    // correct
+    left: '0',
+    width: '100vw',
+    //
     height: '100vh',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
     flexDirection: 'column',
     backgroundColor: '#ccc',
-    left: `${ props.left }%`,
     transition: '1s all linear',
     opacity: 1,
-
-    left: '0',
-    width: '100vw',
-
   }
 
   return (
