@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
+// import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 // import Screen from './Screen';
 import content from '../content';
 import { Slide, SlideBackground, GeoShape } from './Slide';
@@ -21,6 +21,7 @@ class LandingSlider extends Component {
 
   render() {
 
+    // should this be a screen?
     let sliderStyles = {
       position: 'relative',
       width: '100vw',
@@ -31,20 +32,13 @@ class LandingSlider extends Component {
     return (
       <div className="slider" style={ sliderStyles }>
 
-        <CSSTransitionGroup
-          transitionName="example"
-          transitionEnterTimeout={500}
-          transitionLeaveTimeout={300}>
-          <Slide
+        <Slide
             classes="slide slide--current"
             name={ content.landing.profiles[this.props.count] }
             bgImage={ heroArray[this.props.count] }
             gradientArray={ content.gradients[this.props.count].colors }
             left={ 25 }
             />
-        </CSSTransitionGroup>
-
-
 
       </div>
     )
